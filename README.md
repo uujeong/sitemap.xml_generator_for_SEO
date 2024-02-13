@@ -1,56 +1,46 @@
-<!--
-Hey, thanks for using the awesome-readme-template template.
-If you have any enhancements, then fork this project and create a pull request
-or just open an issue with the label "enhancement".
-
-Don't forget to give this project a star for additional support ;)
-Maybe you can mention me or this repo in the acknowledgements too
--->
-
 <div align="center">
 
-  <img src="assets/logo.png" alt="logo" width="200" height="auto" />
-  <h1>Awesome Readme Template</h1>
-  
+  <img src="assets/logo.jpeg" alt="logo" width="200" height="auto" />
+    </a>
+  <h1>Github Blog Sitemap Updater</h1>
   <p>
-    An awesome README template for your projects! 
-  </p>
 
+    This project provides an automation script to enhance the SEO (Search Engine Optimization) of your GitHub blog by automatically updating the sitemap.xml file every time you commit to GitHub. The sitemap.xml file helps search engines understand the structure of your website, improving your website's search engine rankings.
+
+  </p>
+<br />
 <!-- Badges -->
 <p>
-  <a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
+  <a href="https://github.com/uujeong/sitemap.xml_generator_for_SEO/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/uujeong/awesome-readme-template" alt="contributors" />
   </a>
   <a href="">
     <img src="https://img.shields.io/github/last-commit/uujeong/awesome-readme-template" alt="last update" />
   </a>
-  <a href="https://github.com/uujeong/awesome-readme-template/network/members">
-    <img src="https://img.shields.io/github/forks/uujeong/awesome-readme-template" alt="forks" />
+  <a href="https://github.com/uujeong/sitemap.xml_generator_for_SEO/network/members">
+    <img src="https://img.shields.io/github/forks/uujeong/sitemap.xml_generator_for_SEO" alt="forks" />
   </a>
-  <a href="https://github.com/uujeong/awesome-readme-template/stargazers">
+  <a href="https://github.com/uujeong/sitemap.xml_generator_for_SEO/stargazers">
     <img src="https://img.shields.io/github/stars/uujeong/awesome-readme-template" alt="stars" />
   </a>
-  <a href="https://github.com/uujeong/awesome-readme-template/issues/">
+  <a href="https://github.com/uujeong/sitemap.xml_generator_for_SEO/issues/">
     <img src="https://img.shields.io/github/issues/uujeong/awesome-readme-template" alt="open issues" />
   </a>
-  <a href="https://github.com/uujeong/awesome-readme-template/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/uujeong/awesome-readme-template.svg" alt="license" />
-  </a>
+    <a href="https://github.com/uujeong/sitemap.xml_generator_for_SEO/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/tabler.svg?label=License&message=MIT&color=1c7ed6" alt="License"></a>
+    <a href="https://github.com/uujeong/archive/dev.zip" target="__blank"><img src="https://img.shields.io/static/v1?label=Download&message=ZIP&color=339af0" alt="Tabler preview"></a>
 </p>
    
-<h4>
-    <a href="https://github.com/uujeong/awesome-readme-template/">View Demo</a>
-  <span> · </span>
-    <a href="https://github.com/uujeong/awesome-readme-template">Documentation</a>
-  <span> · </span>
-    <a href="https://github.com/uujeong/awesome-readme-template/issues/">Report Bug</a>
-  <span> · </span>
-    <a href="https://github.com/uujeong/awesome-readme-template/issues/">Request Feature</a>
-  </h4>
 </div>
 
 <br />
 
+<!--한국어 번역-->
+
+## 🇰🇷 한국어로 읽기
+
+이 링크를 클릭하여 [한국어](./README-ko.md)로 읽을 수 있습니다.
+
+<br />
 <!-- Table of Contents -->
 
 # Table of Contents
@@ -58,138 +48,71 @@ Maybe you can mention me or this repo in the acknowledgements too
 - [About the Project](#about-the-project)
   - [Tech Stack](#tech-stack)
   - [Features](#features)
-  - [Color Reference](#color-reference)
   - [Environment Variables](#environment-variables)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Run Locally](#run-locally)
-- [Usage](#usage)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-  - [Code of Conduct](#code-of-conduct)
 - [License](#license)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!-- About the Project -->
 
 ## About the Project
 
+The structure of the `sitemap.xml` we will scrape looks like this:
+
 <div align="center"> 
-  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
+  <img width="1414" alt="image" src="https://github.com/uujeong/sitemap.xml_generator_for_SEO/assets/86465999/08d47d3d-d86c-415e-90ac-113ca19ff74b">
 </div>
-
-<!-- TechStack -->
-
-### Tech Stack
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://nextjs.org/">Next.js</a></li>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-    <li><a href="https://go.dev/">Golang</a></li>
-    <li><a href="https://nestjs.com/">Nest.js</a></li>
-    <li><a href="https://socket.io/">SocketIO</a></li>
-    <li><a href="https://www.prisma.io/">Prisma</a></li>    
-    <li><a href="https://www.apollographql.com/">Apollo</a></li>
-    <li><a href="https://graphql.org/">GraphQL</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.mysql.com/">MySQL</a></li>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-    <li><a href="https://redis.io/">Redis</a></li>
-    <li><a href="https://neo4j.com/">Neo4j</a></li>
-    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>DevOps</summary>
-  <ul>
-    <li><a href="https://www.docker.com/">Docker</a></li>
-    <li><a href="https://www.jenkins.io/">Jenkins</a></li>
-    <li><a href="https://circleci.com/">CircleCLI</a></li>
-  </ul>
-</details>
 
 <!-- Features -->
 
 ### Features
 
-- Feature 1
-- Feature 2
-- Feature 3
-
-<!-- Color Reference -->
-
-### Color Reference
-
-| Color           | Hex                                                              |
-| --------------- | ---------------------------------------------------------------- |
-| Primary Color   | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
-| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
-| Accent Color    | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
-| Text Color      | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
+- Automatically generates and updates the sitemap.xml for GitHub blogs.
+- Sets up a Git Hook for automatic execution before commits.
+- Utilizes Selenium and undetected_chromedriver for web scraping.
 
 <!-- Env Variables -->
 
 ### Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
+To run this project, you will need to install some packages, and the following environment variables:
 
 <!-- Getting Started -->
 
 ## Getting Started
 
-<!-- Prerequisites -->
+### Library
 
-### Prerequisites
-
-This project uses Yarn as package manager
-
-```bash
- npm install --global yarn
-```
-
-<!-- Installation -->
+- `selenium`
+- `undetected_chromedriver`
+- `fake_useragent`
+- `selenium_stealth`
 
 ### Installation
 
-Install my-project with npm
+Virtual Environment is recommended to install the project.
+
+- I used conda to create a virtual environment.
 
 ```bash
-  yarn install my-project
-  cd my-project
+  conda create -n env_name python = version
 ```
 
-<!-- Run Locally -->
+- I used ...
+
+```bash
+  conda create -n gh-sitemap python = 3.10
+```
 
 ### Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/Louis3797/awesome-readme-template.git
+  git clone https://github.com/uujeong/
+  sitemap.xml_generator_for_SEO.git
 ```
 
 Go to the project directory
@@ -198,76 +121,50 @@ Go to the project directory
   cd my-project
 ```
 
+- Activate the virtual environment
+
+```bash
+  conda activate env_name
+```
+
 Install dependencies
 
 ```bash
-  yarn install
+  pip install requirements.txt
 ```
 
-Start the server
+### Apply in your Website
+
+1. Create a Git Hook Script:
+   In the .git/hooks directory, create a file named pre-commit. If a pre-commit file already exists, you can add to it. You can also copy the .git/hooks/pre-commit.sample file for use.
+
+2. Edit the pre-commit Script:
+   Add the following script to the pre-commit file. This script runs the main.py script to generate and commit the updated sitemap.xml.
 
 ```bash
-  yarn start
+#!/bin/sh
+
+# Run main.py script to update sitemap.xml
+python path/to/main.py
+
+# Check if sitemap.xml has been updated and stage it
+
+git add sitemap.xml
 ```
 
-<!-- Usage -->
+3. Grant Execution Permissions: Give the script execution permissions by running:
 
-## Usage
-
-Use this space to tell a little more about your project and how it can be used. Show additional screenshots, code samples, demos or link to other resources.
-
-```javascript
-import Component from "my-project";
-
-function App() {
-  return <Component />;
-}
+```sh
+chmod +x .git/hooks/pre-commit
 ```
 
-<!-- Roadmap -->
-
-## Roadmap
-
-- [x] Todo 1
-- [ ] Todo 2
-
-<!-- Contributing -->
-
-## Contributing
-
-<a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
-</a>
-
-Contributions are always welcome!
-
-See `contributing.md` for ways to get started.
-
-<!-- Code of Conduct -->
-
-### Code of Conduct
-
-Please read the [Code of Conduct](https://github.com/Louis3797/awesome-readme-template/blob/master/CODE_OF_CONDUCT.md)
-
-<!-- License -->
+Now, each time you commit to GitHub, the pre-commit hook will run the `main.py` script, automatically generating and updating the sitemap.xml file. This updated file will be automatically included in your commit and uploaded to GitHub when you push.
 
 ## License
 
-Distributed under the no License. See LICENSE.txt for more information.
-
-<!-- Contact -->
+See [MIT LICENSE](https://github.com/uujeong/sitemap.xml_generator_for_SEO/blob/main/LICENSE) for more information.
 
 ## Contact
 
-YU JEONG, KIM - [@github.io](https://uujeong/github.io) - dada207@naver.com
-
-<!-- Acknowledgments -->
-
-## Acknowledgements
-
-Use this section to mention useful resources and libraries that you have used in your projects.
-
-- [Shields.io](https://shields.io/)
-- [Awesome README](https://github.com/matiassingers/awesome-readme)
-- [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#travel--places)
-- [Readme Template](https://github.com/othneildrew/Best-README-Template)
+[YU JEONG, KIM](https://uujeong/github.io)  
+💌 u.j.kinn@gmail.com
