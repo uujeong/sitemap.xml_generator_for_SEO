@@ -4,9 +4,10 @@
     </a>
   <h1>Github Blog Sitemap Updater</h1>
   <p>
-
+  
+```plaintext
     This project provides an automation script to enhance the SEO (Search Engine Optimization) of your GitHub blog by automatically updating the sitemap.xml file every time you commit to GitHub. The sitemap.xml file helps search engines understand the structure of your website, improving your website's search engine rankings.
-
+```
   </p>
 <br />
 <!-- Badges -->
@@ -96,67 +97,67 @@ Virtual Environment is recommended to install the project.
 
 - I used conda to create a virtual environment.
 
-```bash
+  ```bash
   conda create -n env_name python = version
-```
+  ```
 
 - I used ...
 
-```bash
+  ```bash
   conda create -n gh-sitemap python = 3.10
-```
+  ```
 
 ### Run Locally
 
-Clone the project
+- Clone the project
 
-```bash
+  ```bash
   git clone https://github.com/uujeong/
   sitemap.xml_generator_for_SEO.git
-```
+  ```
 
-Go to the project directory
+- Go to the project directory
 
-```bash
+  ```bash
   cd my-project
-```
+  ```
 
-- Activate the virtual environment
+* Activate the virtual environment
 
-```bash
+  ```bash
   conda activate env_name
-```
+  ```
 
-Install dependencies
+* Install dependencies
 
-```bash
-  pip install requirements.txt
-```
+  ```bash
+  pip install -r requirements.txt
+  ```
 
 ### Apply in your Website
 
-1. Create a Git Hook Script:
+1. Create a Git Hook Script:  
    In the .git/hooks directory, create a file named pre-commit. If a pre-commit file already exists, you can add to it. You can also copy the .git/hooks/pre-commit.sample file for use.
 
-2. Edit the pre-commit Script:
+2. Edit the pre-commit Script:  
    Add the following script to the pre-commit file. This script runs the main.py script to generate and commit the updated sitemap.xml.
 
-```bash
-#!/bin/sh
+   ```bash
+   #!/bin/sh
 
-# Run main.py script to update sitemap.xml
-python path/to/main.py
+   # Run main.py script to update sitemap.xml
+   python path/to/main.py
 
-# Check if sitemap.xml has been updated and stage it
+   # Check if sitemap.xml has been updated and stage it
 
-git add sitemap.xml
-```
+   git add sitemap.xml
+   ```
 
 3. Grant Execution Permissions: Give the script execution permissions by running:
 
-```sh
-chmod +x .git/hooks/pre-commit
-```
+   ```sh
+   chmod +x .git/hooks/pre-commit
+   ```
 
 Now, each time you commit to GitHub, the pre-commit hook will run the `main.py` script, automatically generating and updating the sitemap.xml file. This updated file will be automatically included in your commit and uploaded to GitHub when you push.
 

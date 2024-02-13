@@ -3,9 +3,10 @@
   <img src="assets/logo.jpeg" alt="logo" width="200" height="auto" />
     </a>
   <h1>Github Blog Sitemap Updater</h1>
-  <p>
-
-    이 프로젝트는 깃허브 블로그의 SEO(Search Engine Optimization)를 향상시키기 위해, 깃허브에 커밋할 때마다 자동으로 sitemap.xml 파일을 업데이트하는 자동화 스크립트를 제공합니다. sitemap.xml 파일은 웹사이트의 구조를 검색 엔진에 알려주어, 웹사이트의 검색 엔진 순위를 개선하는 데 도움을 줍니다.
+  
+  ```plaintext
+   이 프로젝트는 깃허브 블로그의 SEO(Search Engine Optimization)를 향상시키기 위해, 깃허브에 커밋할 때마다 자동으로 sitemap.xml 파일을 업데이트하는 자동화 스크립트를 제공합니다. sitemap.xml 파일은 웹사이트의 구조를 검색 엔진에 알려주어, 웹사이트의 검색 엔진 순위를 개선하는 데 도움을 줍니다.
+  ```
 
   </p>
 <br />
@@ -97,42 +98,42 @@
 
 - 가상환경 conda 명령어를 통해 생성합니다.
 
-```bash
+  ```bash
   conda create -n env_name python = version
-```
+  ```
 
 - 제가 사용한 명령어는 다음과 같습니다.
 
-```bash
+  ```bash
   conda create -n gh-sitemap python = 3.10
-```
+  ```
 
 ### Run Locally
 
 - 이 프로젝트를 `git clone` 명령어로 복제합니다.
 
-```bash
+  ```bash
   git clone https://github.com/uujeong/
   sitemap.xml_generator_for_SEO.git
-```
+  ```
 
 - 프로젝트 디렉토리로 이동합니다.
 
-```bash
+  ```bash
   cd my-project
-```
+  ```
 
 - 가상환경을 활성화합니다.
 
-```bash
+  ```bash
   conda activate env_name
-```
+  ```
 
 - 의존성 패키지들을 설치합니다.
 
-```bash
+  ```bash
   pip install requirements.txt
-```
+  ```
 
 ### Apply in your Website
 
@@ -142,23 +143,23 @@
 2. pre-commit 스크립트 편집  
    : pre-commit 파일을 편집하여 다음 스크립트를 추가합니다. 이 스크립트는 main.py 스크립트를 실행하여 sitemap.xml을 생성하고 변경사항을 커밋에 포함시킵니다.
 
-```bash
-#!/bin/sh
+   ```bash
+   #!/bin/sh
 
-# sitemap.xml을 업데이트하기 위해 main.py 스크립트 실행
-python path/to/main.py
+   # sitemap.xml을 업데이트하기 위해 main.py 스크립트 실행
+   python path/to/main.py
 
-# sitemap.xml이 업데이트 되었는지 확인하고 스테이징 영역에 추가
+   # sitemap.xml이 업데이트 되었는지 확인하고 스테이징 영역에 추가
 
-git add sitemap.xml
-```
+   git add sitemap.xml
+   ```
 
 3. 실행 권한 부여:
    스크립트에 실행 권한을 부여합니다. 터미널에서 다음 명령어를 실행합니다:
 
-```sh
-chmod +x .git/hooks/pre-commit
-```
+   ```sh
+   chmod +x .git/hooks/pre-commit
+   ```
 
 이제 깃허브에 커밋을 할 때마다 pre-commit 훅이 실행되어 main.py 스크립트를 통해 sitemap.xml 파일이 자동으로 생성되고 업데이트됩니다. 이 업데이트된 sitemap.xml 파일은 커밋에 자동으로 포함되어 깃허브에 푸시될 때 함께 업로드됩니다.
 
