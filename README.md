@@ -5,9 +5,8 @@
   <h1>Github Blog Sitemap Updater</h1>
   <p>
   
-```plaintext
     This project provides an automation script to enhance the SEO (Search Engine Optimization) of your GitHub blog by automatically updating the sitemap.xml file every time you commit to GitHub. The sitemap.xml file helps search engines understand the structure of your website, improving your website's search engine rankings.
-```
+
   </p>
 <br />
 <!-- Badges -->
